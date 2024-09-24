@@ -48,6 +48,16 @@ return {
           desc = "Toggler",
         }
 
+        maps.n["<Leader>bj"] = {
+          "<cmd>bprevious<CR>",
+          desc = "Buffer previous",
+        }
+
+        maps.n["<Leader>bk"] = {
+          "<cmd>bnext<CR>",
+          desc = "Buffer next",
+        }
+
         -- maps.n[";"] = {
         --   desc = "⚡︎ Flash",
         -- }

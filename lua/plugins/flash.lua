@@ -2,7 +2,13 @@ local prefix = ";"
 local icon = vim.g.icons_enabled and "⚡︎" or ""
 return {
     "folke/flash.nvim",
-    opts = {},
+    opts = {
+      modes = {
+        char = {
+          jump_labels = true
+        }
+      }
+    },
     keys = {
         {
             prefix .. "s",
