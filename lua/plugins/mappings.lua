@@ -58,6 +58,35 @@ return {
           desc = "Buffer next",
         }
 
+        maps.n["<Leader>ro"] = {
+          "<cmd>set formatoptions-=ro<CR>",
+          desc = "Disable the automatic insertion of comment symbols when wrapping lines.",
+        }
+
+        maps.n["]b"] = {
+          function()
+            require("astrocore.buffer").nav(vim.v.count1)
+          end,
+          desc = "Next buffer"
+        }
+
+        maps.n["[b"] = {
+          function()
+            require("astrocore.buffer").nav(-vim.v.count1)
+          end,
+          desc = "Previous buffer"
+        }
+
+        -- mappings seen under group name "Buffer"
+        maps.n["<Leader>bd"] = {
+          function()
+            require("astroui.status.heirline").buffer_picker(
+              function(bufnr) require("astrocore.buffer").close(bufnr) end
+            )
+          end,
+          desc = "Close buffer from tabline",
+        }
+
         -- maps.n[";"] = {
         --   desc = "⚡︎ Flash",
         -- }
