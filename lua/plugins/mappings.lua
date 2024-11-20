@@ -87,6 +87,13 @@ return {
           desc = "Close buffer from tabline",
         }
 
+        maps.n["J"] = {
+          function()
+
+          end,
+          desc = "",
+        }
+
         -- maps.n[";"] = {
         --   desc = "⚡︎ Flash",
         -- }
