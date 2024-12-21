@@ -44,7 +44,7 @@ return {
         }
 
         maps.n["<Leader>tt"] = {
-          "<cmd>ToggleAlternate<CR>",
+          "<cmd>Switch<CR>",
           desc = "Toggler",
         }
 

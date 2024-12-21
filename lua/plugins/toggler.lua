@@ -1,25 +1,10 @@
 -- toggler true false
 return {
-    "rmagatti/alternate-toggler",
-    name = "alternate-toggler",
+    "AndrewRadev/switch.vim",
+    name = "AndrewRadev-switch.vim",
     config = function ()
     end,
     opts = {
-        alternates = {
-            ["true"] = "false",
-            ["True"] = "False",
-            ["TRUE"] = "FALSE",
-            ["Yes"] = "No",
-            ["YES"] = "NO",
-            ["1"] = "0",
-            ["<"] = ">",
-            ["("] = ")",
-            ["["] = "]",
-            ["{"] = "}",
-            ['"'] = "'",
-            ['""'] = "''",
-            ["+"] = "-",
-            ["==="] = "!=="
-        }
+
     }
 }
