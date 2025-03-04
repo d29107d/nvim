@@ -63,16 +63,16 @@ return {
           desc = "Disable the automatic insertion of comment symbols when wrapping lines.",
         }
 
-        maps.n["]b"] = {
+        maps.n["H"] = {
           function()
-            require("astrocore.buffer").nav(vim.v.count1)
+            require("astrocore.buffer").nav(-vim.v.count1)
           end,
           desc = "Next buffer"
         }
 
-        maps.n["[b"] = {
+        maps.n["L"] = {
           function()
-            require("astrocore.buffer").nav(-vim.v.count1)
+            require("astrocore.buffer").nav(vim.v.count1)
           end,
           desc = "Previous buffer"
         }

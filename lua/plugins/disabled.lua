@@ -5,4 +5,5 @@ return {
   { "rcarriga/cmp-dap", enabled = false },
   { "rcarriga/nvim-dap-ui", enabled = false },
   { "rcarriga/nvim-notify", enabled = false },
+  { "MagicDuck/grug-far.nvim", enabled = false },
 }
